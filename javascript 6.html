@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #button{
+             background-color: black;
+             color: white;
+             border-radius: 10px;
+             margin: 20px;
+              
+         }
+    </style>
+</head>
+<body>
+    <h2>enter your pasword</h2>
+    <!---input type="text" placeholder="enter your name" id="name"><br>
+
+       <button id="button" onclick=" showname()">print name</button !--->
+         <input type=" password" placeholder="enter your pasword" id="pass">
+          <button id="button" onclick="  checkpasswword()">  check</button>
+          <p id="msg"></p>
+
+          <script>
+        function  checkpasswword(){
+          let pass = document.getElementById("pass").value;
+          let msg = document.getElementById("msg");
+          //console.log(pass.length)
+          if(pass.length >=5){
+            //msg = "strong pasword";
+            // msg = document.getElementById("msg").innerText = msg
+             msg.innerText = "strong pasword"
+             msg.style.color = "green";
+             msg.style.fontsize = "20px";
+          }else{
+             //msg = "weak pasword ";
+             //document.getElementById("msg").innerText = msg;
+             msg.innerText = "weak pasword "
+             msg.style.color = " red";
+             msg.style.fontsize = "20px";
+            
+          }
+        }
+        
+        
+    </script>
+
+    <!---script>
+        function showname(){
+          let name = document.getElementById("name").value;
+          alert("your name is:" + name)
+        }
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("bismillah hir rahman nir rahem")
+       // let name ;
+        //name = "ramla"
+        //console.log(name)
+        //name = "umar"
+        //console.log(name)
+
+        //const name = "ramla"
+       //console.log(name)
+
+       //const surahs =  [" الفاتحہ "," البقرہ"," ال عمران"," النساء", "    المائدہ ",]
+       //console.log(surahs)
+       const prayers = ["fajar"," zuhar"," asar"," magrib"," esha",] 
+       const userinput = prompt("enter prayer")
+
+      if ( prayers.includes(userinput)) {
+         console.log("this prayer is in the list")
+      } else{
+        console.log("this prayer is  not in the list")
+      }
+       
+
+       prayers.unshift("thajad")
+       prayers.push("witr")
+       console.log(prayers)
+    </script>
+</body>
+</html>

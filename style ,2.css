@@ -1,0 +1,10 @@
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+body{
+   background-color: azure;
+}
+.navbar{
+   background-color: rgb(199, 0, 96);
